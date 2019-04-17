@@ -1,0 +1,127 @@
+		
+
+常量的创建
+外部文件的引入方法 方法之间的区别
+
+
+ mysqli_connect(主机名,用户名,密码,数据库名);  链接数据库
+mysqli_errno() 链接失败报错
+mysqli_query(链接对象,sql语句)  执行非查询语句   当变量的类型是字符串时，必须在外面添加单引号或双引号
+ mysqli_fetch_assoc
+while() {   echo }
+// 释放结果集
+mysqli_free_result();
+mysqli_num_rows()
+mysqli_close()
+
+  mysql_fetch_row()：返回索引数组
+  mysql_fetch_assoc()：返回关联数组
+  mysql_fetch_array()：返回混合数组
+
+
+数据库的截取数据
+             多表联合查询
+
+
+JSON
+1、Javascript 解析方法
+ JSON.parse( json格式的字符串 ) 、 解析成js数组或对象
+ JSON.stringify(js对象或数组)；    返回的是json格式的字符串
+2、PHP解析方法
+json_encode()、json_decode()
+
+DOCTYPE 的作用 : 声明文档的解析类型 避免浏览器的怪异模式
+标签选择器  子代选择器  后代选择器 并集选择器 交集选择器  结构伪类选择器
+important < 行内样式 < id < class < 标签
+clear  : both  clearfix  
+sessionstorage   声明周期短  浏览器关闭销毁 存在浏览器缓存中 5M
+localstorage    生命周期长 存储在硬盘中 永久性存储   20M
+nth-of-type ( )  nth-last-of-type( 最后几个)  firstchild lastchild 
+
+
+用css3编写 div旋转90度  0.5秒后变圆,0.5秒后放大2倍
+div { width:20px;height:20px;  animation:1s }   @keyframes  aa  0%{ transform:rotate(90deg) } 50%{border-radius:50% } 100% { width:40px;hidth:40px }
+
+事件委托是什么   好处
+阻止事件冒泡和浏览器默认行为    
+e.stopPropagation()        e.preventDefault()
+DOM元素的增删改查
+document.getelementbyname
+document.getelementbytagname
+数组去重
+call 和 apply的区别
+split()和join()的区别
+get和post的区别
+原生 jquery解绑事件
+移除自定义属性
+全屏
+dom元素.requestFullScreen()  开启全屏
+dom元素.cancelFullScreen() 退出全屏
+dom元素.fullscreenElement
+全屏有兼容性问题 要加浏览器前缀
+
+
+lable标签的作用  自动获取光标
+控制页面打开窗口的方式
+ajax的请求与响应
+
+index1.php
+change事件    
+attr  prop的区别
+attr返回值是属性值
+prop 返回值是false 或true    多用于判断
+dataset    可以获取到所有标签上使用data-xxx方式定义的属性
+
+
+点透事件
+ 
+  
+状态码
+200 成功 4**开头   请求错误客户端错误    5**开头服务器错误       3**重定向
+一个项目的六个板块
+
+jquery中如何事件委托  :    $(父级元素的选择器).on('事件名','具体要触发事件的子元素',回调函数)
+
+
+函数三要素   函数名  参数  返回值   函数中有异步操作 则不需要有返回值 肯定要有回调函数如果这个函数执行完不需要结果  也不用写return  
+同步操作  并需要结果  要记得写返回值
+在全局声明变量  相当于给window对象添加属性   status默认是一个空的字符串  赋值为其他类型 也会转成字符串
+
+接收响应
+	xhr.readyState记录了整个请求和响应的变化   4 表示响应完成
+		
+	由于ajax是一个异步请求, 所以什么时候响应完成,我们并不知道
+		需要注册一个事件,来监听这个响应的过程   onreadystatechange
+			
+	在事件中, 需要'
+		1. 先判断是否完成      xhr.readyState == 4	
+		2. 判断是否成功         xhr.status == 200	
+		3. 获取响应主体的内容    xhr.responseText	
+		获取响应头的信息
+			xhr.getAllResponseHeaders()  获取所有	
+			xhr.getResponseHeader('键')  获取其中一个
+
+
+formdata 	
+processData: false	
+conrentType:false	
+iframe  嵌套别人的页面
+php操作数组  count 数组中单元数目或者对象中的属性的个数  
+       forEach($users as $value =>$key)  循环遍历数组 
+serialize() jquery方法  js原生没有这个方法 表单无文件可以直接用  有文件要用formdata
+重置表单  reset()方法   form标签的  dom对象  身上的方法	 
+beforeSend
+postman软件   
+友好页  有提示的  例如404notfond
+修改按钮
+strrchr()  从后往前截取   例如 获取后缀名
+cookie和session的区别    cookie是在浏览器端生成   session是在服务器端生成  cookie存的是sessionid 
+xs sm md lg  媒体查询的屏幕尺寸
+php中的基本数据类型     整数int   浮点型float   字符串string  布尔型boolean
+原生绑定事件的三种方式   on      addeventlistener()      attachevent()    
+原生解绑事件的几种方式 
+多表联合查询
+ajax改为同步请求       async:false
+readonly     input属性   只读
+location.reload   自动刷新
+return   break  canatinue  的区别

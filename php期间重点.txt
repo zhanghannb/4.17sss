@@ -1,0 +1,30 @@
+formdata
+跨域
+模板引擎
+原生和jquery的ajax
+cookie和session
+http协议   ----->请求报文             -------->响应报文
+json       php操作json      原生js操作json
+
+php语法
+	isset(变量)        如果变量赋值了,则返回true, 否则返回false
+		 
+	empty(变量)      判断变量是否为空,为空则返回true, 否则返回false 什么是空: 0, '0', '',                                          false, null, []	
+	unset(变量)    删除变量
+		
+	注意: php中删除变量,其实是给这个变量赋值为null.   如果只声明不赋值,默认里面存的也                  是null
+php创建数组:  $arr = array()     $arr = []
+      遍历数组: foreach  foreach(数组 as 键的变量名=>值的变量名)
+                     foreach(数组 as 值)
+   给数组中添加内容    索引数组------------>   数组[] = 值
+                                 关联数组------------>   数组['键'] = 值
+count(数组)  返回数组的长度
+unset(数组['键'])
+获取二维数组里面的某个值   数组[键][键]
+php 常量    define('常量名',值)   定义时赋值  代码执行过程中 不可以重新赋值  默认区分大小写
+引入文件  include_once
+文件操作的api  读取文件的api  file_get_contents('文件的路径')    返回文件的内容  字符串
+	写入文件的api   file_put_contents('文件的路径', 写入的内容, FILE_APPEND)   如果不写                第三个参数,默认会覆盖原来的内容,写了就不会覆盖
+	
+		
+		

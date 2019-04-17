@@ -1,0 +1,28 @@
+反转字符串 前后空格问题             trim()方法
+字符串拼接新方法   模板字符串 :  `${}`  
+foreach 的使用 
+php中 foreach 的使用 foreach($arr as $key=>$value)
+.数组的常用方法有哪些: push  unshift indexof shift reverse sore  
+2.js的返回类型有哪些:
+数组去重
+Js继承的三种方法   原型继承  构造函数继承   组合继承5
+常见的布局模式  flex  栅格  双飞翼  百分比  rem   
+H5 新增标签有哪些 
+  emile  tel   placehoder  autofucus  autocomplete  required  pattern  multiple 
+随机数       *************Math random() 
+移动端点透事件
+Touch是不是click的封装 
+location方法
+location.assign   和 location.herf
+
+可输入  下拉框 
+去除前后空格 
+函数节流问题
+如何设置2rem = 200px;
+自调用函数
+jquery和原生 绑定事件的方法 和 解绑事件的方法
+
+
+
+数组置空的3种方式 : 1.赋值数组为空 2 数组length为0 3.splice arr.splice(0)
+new  创建一个空对象  给对象赋值  让this指向这个空对象  返回这个对象
